@@ -1,0 +1,27 @@
+.navbar-brand {
+  font-family: Consolas, 'Courier New', monospace;
+  color: #C0C0C0 !important;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.hero-bg {
+  position: relative;
+  background-image: url('pic_glenn_setup.JPEG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #C0C0C0;           /* Text color for contrast */
+  padding: 3rem;
+  text-align: center;
+  z-index: 0;
+  min-height: 100vh;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* 50% black overlay */
+  z-index: -1;
+}
