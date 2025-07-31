@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media - GLENN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="boot_style.css">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #222831, #30475e, #1b1b2f);
+      background-size: 300% 300%;
+      animation: gradientShift 40s ease infinite;
+      color: #f1f1f1;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .media-title {
+      font-family: 'Orbitron', sans-serif;
+      color: #00d4ff;
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px rgba(0, 212, 255, 0.3);
+      margin-top: 2rem;
+    }
+
+    .media-section {
+      padding: 2rem 0;
+    }
+
+    .media-card img {
+      border-radius: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .media-card img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">GLENN - Jonah Moro</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="the_robot.html">The Robot</a></li>
+        <li class="nav-item"><a class="nav-link" href="dev_blog.html">Dev Blog</a></li>
+        <li class="nav-item"><a class="nav-link active" href="media.html">Media</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Title -->
+<div class="container text-center">
+  <h1 class="media-title">Media Gallery</h1>
+  <p class="lead">Photos & Videos from GLENN's Journey</p>
+</div>
+
+<!-- Media Grid -->
+<div class="container media-section">
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <div class="media-card">
+        <img src="IMG_0059.JPEG" class="img-fluid" alt="GLENN standing">
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="media-card">
+        <img src="dev_photo.JPEG" class="img-fluid" alt="Development process">
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="media-card">
+        <iframe class="w-100 rounded-4" height="250" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="GLENN demo video" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Add more media items as needed -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <p>&copy; 2025 GLENN Project by Jonah Moro</p>
+  <p>
+    <a href="mailto:yourname@example.com" class="text-white text-decoration-underline">yourname@example.com</a> |
+    <a href="tel:+1234567890" class="text-white text-decoration-underline">+1 (234) 567-890</a>
+  </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
